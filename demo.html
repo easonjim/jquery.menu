@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jquery实现无限级别导航菜单插件</title>
+
+<link rel="stylesheet" media="screen" href="css/superfish.css" />
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+
+</head>
+<body>
+
+<ul  class="sf-menu">
+	<li><a href="#">1级菜单</a>
+		<ul>
+			<li><a href="#aa">2级菜单</a></li>			
+			<li><a href="#ab">2级菜单</a>
+				<ul>
+					<li><a href="#">3级菜单</a></li>
+					<li><a href="#aba">3级菜单</a></li>
+					<li><a href="#abb">3级菜单</a></li>
+					<li><a href="#abc">3级菜单</a></li>
+					<li><a href="#abd">3级菜单</a>
+						<ul>
+							<li><a href="#">4级菜单</a></li>
+							<li><a href="#">4级菜单</a></li>
+							<li><a href="#">4级菜单</a></li>
+							<li><a href="#">4级菜单</a></li>
+							<li><a href="#">4级菜单</a>
+								<ul>
+									<li><a href="#">5级菜单</a></li>
+									<li><a href="#">5级菜单</a></li>
+									<li><a href="#">5级菜单</a></li>
+									<li><a href="#">5级菜单</a></li>
+									<li><a href="#">5级菜单</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			
+			<li><a href="#">2级菜单</a>
+				<ul>
+					<li><a href="#">3级菜单</a></li>
+					<li><a href="#">3级菜单</a></li>
+					<li><a href="#">3级菜单</a></li>
+					<li><a href="#">3级菜单</a></li>
+					<li><a href="#">3级菜单</a>
+						<ul>
+							<li><a href="#">四级菜单</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			
+			<li><a href="#">2级菜单</a>
+				<ul>
+					<li><a href="#">3级菜单</a></li>
+					<li><a href="#">3级菜单</a></li>
+					<li><a href="#">3级菜单</a></li>
+					<li><a href="#">3级菜单</a></li>
+					<li><a href="#">3级菜单</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>	
+</ul>
+<script type="text/javascript">				
+$(document).ready(function(){
+	$('ul.sf-menu').superfish();
+});
+</script>
+
+</body>
+</html>
